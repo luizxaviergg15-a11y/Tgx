@@ -1,0 +1,78 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <RootNamespace>LostArtifacts</RootNamespace>
+    <AssemblyName>LostArtifacts</AssemblyName>
+    <AssemblyTitle>LostArtifacts Mobile Port</AssemblyTitle>
+    <Product>LostArtifacts Mobile Port 1.3.0.0</Product>
+    <Description>Lost Artifacts adapted for the Hollow Knight mobile port 1.3.0.0.</Description>
+    <AssemblyVersion>1.1.1.2</AssemblyVersion>
+    <FileVersion>1.1.1.2</FileVersion>
+    <LangVersion>latest</LangVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <Nullable>disable</Nullable>
+    <DefineConstants>$(DefineConstants);LOST_ARTIFACTS_MOBILE</DefineConstants>
+  </PropertyGroup>
+
+  <!-- All references below come from the supplied mobile port or the supplied mod dependencies. -->
+  <PropertyGroup>
+    <PortManaged>$(MSBuildThisFileDirectory)..\PortReferences</PortManaged>
+    <ModDependencies>$(MSBuildThisFileDirectory)..\ModDependencies</ModDependencies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(PortManaged)\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Assembly-CSharp-firstpass"><HintPath>$(PortManaged)\Assembly-CSharp-firstpass.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="MMHOOK_Assembly-CSharp"><HintPath>$(PortManaged)\MMHOOK_Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="MMHOOK_PlayMaker"><HintPath>$(PortManaged)\MMHOOK_PlayMaker.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Mono.Cecil"><HintPath>$(PortManaged)\Mono.Cecil.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="MonoMod.RuntimeDetour"><HintPath>$(PortManaged)\MonoMod.RuntimeDetour.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="MonoMod.Utils"><HintPath>$(PortManaged)\MonoMod.Utils.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="PlayMaker"><HintPath>$(PortManaged)\PlayMaker.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Newtonsoft.Json"><HintPath>$(PortManaged)\Newtonsoft.Json.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="netstandard"><HintPath>$(PortManaged)\netstandard.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>$(PortManaged)\UnityEngine.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(PortManaged)\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UI"><HintPath>$(PortManaged)\UnityEngine.UI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.IMGUIModule"><HintPath>$(PortManaged)\UnityEngine.IMGUIModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.InputLegacyModule"><HintPath>$(PortManaged)\UnityEngine.InputLegacyModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.AssetBundleModule"><HintPath>$(PortManaged)\UnityEngine.AssetBundleModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.TextRenderingModule"><HintPath>$(PortManaged)\UnityEngine.TextRenderingModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.AnimationModule"><HintPath>$(PortManaged)\UnityEngine.AnimationModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.AudioModule"><HintPath>$(PortManaged)\UnityEngine.AudioModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.Physics2DModule"><HintPath>$(PortManaged)\UnityEngine.Physics2DModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule"><HintPath>$(PortManaged)\UnityEngine.ParticleSystemModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule"><HintPath>$(PortManaged)\UnityEngine.AndroidJNIModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="System.ComponentModel.Composition"><HintPath>$(PortManaged)\System.ComponentModel.Composition.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="System.Diagnostics.StackTrace"><HintPath>$(PortManaged)\System.Diagnostics.StackTrace.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="System.Globalization.Extensions"><HintPath>$(PortManaged)\System.Globalization.Extensions.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="System.IO.Compression"><HintPath>$(PortManaged)\System.IO.Compression.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="System.Runtime.Serialization.Xml"><HintPath>$(PortManaged)\System.Runtime.Serialization.Xml.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="System.ServiceModel.Internals"><HintPath>$(PortManaged)\System.ServiceModel.Internals.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="System.Transactions"><HintPath>$(PortManaged)\System.Transactions.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="System.Xml.XPath.XDocument"><HintPath>$(PortManaged)\System.Xml.XPath.XDocument.dll</HintPath><Private>false</Private></Reference>
+
+    <Reference Include="SFCore"><HintPath>$(ModDependencies)\SFCore.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Satchel"><HintPath>$(ModDependencies)\Satchel.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="ItemChanger"><HintPath>$(ModDependencies)\ItemChanger.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+
+  <!-- The mobile build deliberately omits Randomizer/DebugMod/MenuChanger integrations. -->
+  <ItemGroup>
+    <Compile Remove="RandoInterop\**\*.cs" />
+    <Compile Remove="DebugInterop\**\*.cs" />
+    <EmbeddedResource Include="Resources\*" />
+  </ItemGroup>
+
+  <Target Name="PrepareMobilePackage" AfterTargets="Build">
+    <PropertyGroup>
+      <PackageDir>$(MSBuildProjectDirectory)\..\dist\LostArtifacts-Mobile-1.3.0.0</PackageDir>
+    </PropertyGroup>
+    <MakeDir Directories="$(PackageDir)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(PackageDir)" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\..\ReadMe.md" DestinationFolder="$(PackageDir)" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\..\SPOILERS.md" DestinationFolder="$(PackageDir)" />
+  </Target>
+</Project>
