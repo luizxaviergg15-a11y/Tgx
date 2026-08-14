@@ -1,0 +1,10 @@
+Como usar:
+1. Crie um repositório no GitHub.
+2. Envie TODOS os arquivos desta pasta para o repositório, mantendo as pastas.
+3. Abra Actions > Build LostArtifacts Mobile.
+4. Execute "Run workflow".
+5. Quando terminar com sucesso, abra a execução e baixe o artifact:
+   LostArtifacts-mobile-1.3.0.0
+6. Dentro dele estará LostArtifacts.dll.
+
+Observação: o workflow usa um runner Windows hospedado pelo GitHub e MSBuild.

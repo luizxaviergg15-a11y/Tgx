@@ -1,0 +1,66 @@
+### Traits
+- Traveler’s Garment (Dirtmouth)
+	- Resilience - Scales damage with the player’s highest velocity over the past second
+- Paving Stone (Forgotten Crossroads)
+	- Stagspeed - Decreases attack cooldown and nail art charge time for 3 seconds after a dash
+- Lush Moss (Greenpath)
+	- Regeneration - Heal a mask after a certain amount of nail hits
+- Noxious Shroom (Fungal Wastes)
+	- Toxic - Hitting an enemy has a 25% chance to release a spore cloud that can spread to nearby enemies
+- Crying Statue (City of Tears)
+	- Fallen - Take one extra damage, but deal more damage for 10 seconds after taking damage
+- Totem Shard (Soul Sanctum)
+	- Soulful - Deal +20% damage for a short time after healing; Deep Focus gives +100% instead, Quick Focus doubles duration
+- Dung Ball (Royal Waterways)
+	- Stinky - Makes you odorous (also generates lag)
+- Tumbleweed (Howling Cliffs)
+	- Windswept - Striking an enemy increases movement speed for 5 seconds
+- Charged Crystal (Crystal Peaks)
+	- Energized - Nail arts deal increased damage
+- Dreamwood (Resting Grounds)
+	- Enervating - Striking an enemy with the Dream Nail makes them take bonus damage for 15 seconds (can stack)
+- Lumafly Essence (Fog Canyon)
+	- Shocking - Swinging the nail creates a chain of electric bursts (shorter each swing, resets when touching ground)
+- Thorned Leaf (Queen's Gardens)
+	- Lacerating - Striking an enemy inflicts a damage over time effect for 5 seconds (cannot stack)
+- Weaver Silk (Deepnest)
+	- Sealed - Releasing a nail art adds flat damage to all instances of damage for 10 seconds
+- Wyrm Ash (Kingdom’s Edge)
+	- Rebirth - Spawn a hatchling after a certain amount of hits
+- Beast Shell (Colosseum of Fools)
+	- Beast Tamer - Striking an enemy buffs minion damage for 5 seconds
+- Honeydrop (Hive)
+	- Honey Coating - Dealing enough damage gives a honey coating that blocks one instance of non-hazard damage (cannot stack)
+- Infected Rock (Ancient Basin)
+	- Forgotten - Increases SOUL gain from striking enemies with the nail
+- Buzzsaw (White Palace)
+	- Secluded - Nail damage increases with distance from nearest enemy
+- Void Emblem (Abyss)
+	- Abyssal - Striking an enemy repeatedly builds up the damage of the next spell (max +50% increase)
+- Attuned Jewel (Godhome)
+	- Attuned - Casting Fireball, Dive, or Shriek grants bonus attack range, movement speed, or damage for 5 seconds
+- Hidden Memento (Path of Pain)
+	- Pogomaster - Pogoing makes the next attack deal increased damage
+
+### Locations
+- Traveler’s Garment (Dirtmouth) - Next to the well
+- Paving Stone (Forgotten Crossroads) - Next to the Stag
+- Lush Moss (Greenpath) - Defeat the Massive Moss Charger
+- Noxious Shroom (Fungal Wastes) - Next to the Mushroom Corpse in Fungal Core
+- Crying Statue (City of Tears) - On the ledge overlooking the Hollow Knight statue
+- Totem Shard (Soul Sanctum) - In the room after Soul Master, next to a Soul Totem
+- Dung Ball (Royal Waterways) - Inside Dung Defender’s cave
+- Tumbleweed (Howling Cliffs) - On the platforms in the far west
+- Charged Crystal (Crystal Peaks) - Defeat Crystal Guardian
+- Dreamwood (Resting Grounds) - Next to the completed Whispering Root after reentering the room
+- Lumafly Essence (Fog Canyon) - Next to the Lumafly tank in Teacher’s Archives
+- Thorned Leaf (Queen's Gardens) - Defeat the Mantis Traitor arena
+- Weaver Silk (Deepnest) - Inside the Weavers’ Den
+- Wyrm Ash (Kingdom’s Edge) - Defeat Hornet Sentinel, or outside the Cast-Off Shell after obtaining King’s Brand
+- Beast Shell (Colosseum of Fools) - Defeat God Tamer in Trial of the Fool
+- Honeydrop (Hive) - Next to the bench
+- Infected Rock (Ancient Basin) - Defeat Broken Vessel
+- Buzzsaw (White Palace) - Hidden in the Workshop
+- Void Emblem (Abyss) - Next to the Void Tendril journal entry
+- Attuned Jewel (Godhome) - Next to the Void Idol
+- Hidden Memento (Path of Pain) - Outside the entrance to Path of Pain after completing it
